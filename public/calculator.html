@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="calculator.css">
+
+<title>GPA Calculator</title>
+</head>
+<body>
+<div id = "box1">
+	<div id = "box2">
+	 <h4> Grade Calculator </h4>
+	 <div id = "box3"> 
+	 	<b class = "redbold" id= "redbold1">Activities</b>
+	 	<p id = "normaltext1">Give grades to the numeric activities</p>
+	 	<table id = "calculator">
+	 		<tr>
+		 		<th>Name</th>
+		 		<th>Short Name</th>
+		 		<th>Weight</th>
+		 		<th>Grade</th>
+		 		<th>Percent</th>
+		 		<th>Remove Activity?</th>
+	 		</tr>
+	 			<td>Activity 1</td>
+	 			<td>A1</td>
+	 			<td>
+	 				<form>
+	 					<input type="text" name="weight" class = "weight">
+	 				</form>
+	 			</td>
+	 			<td>
+	 				<form>
+	 					<pre><input type="text" name="grades" class = "grades" id = "G0"> /</pre>
+	 				</form>
+	 				<form>
+	 					<input type="text" name="grades" class = "grades" id = "G1">
+	 				</form>
+	 			</td>
+	 			<td><p class= "percent" id = "P0"></p></td>
+	 			<td><button class = "button" onclick = "deleteRow(this)">DELETE</button></td>
+	 		<tr>
+	 			<td>Activity 2</td>
+	 			<td>A2</td>
+	 			<td>
+	 				<form>
+	 					<input type="text" name="weight" class = "weight">
+	 				</form>
+	 			</td>
+	 			<td>
+	 				<form>
+	 					<pre><input type="text" name="grades" class = "grades" id = "G2"> /</pre>
+	 				</form>
+	 				
+	 				<form>
+	 					<input type="text" name="grades" class = "grades" id = "G3">
+	 				</form>
+	 			</td>
+	 			<td><p class= "percent" id = "P1"></p></td>
+	 			<td><button class = "button" onclick = "deleteRow(this)">DELETE</button></td>
+	 		</tr>
+			<tr>
+				<td>Activity 3</td>
+	 			<td>A3</td>
+	 			<td>
+	 				<form>
+	 					<input type="text" name="weight" class = "weight">
+	 				</form>
+	 			</td>
+	 			<td>
+	 				<form>
+	 					<pre><input type="text" name="grades" class = "grades" id = "G4"> /</pre>
+	 				</form>
+	 				
+	 				<form>
+	 					<input type="text" name="grades" class = "grades" id = "G5">
+	 				</form>
+	 			</td>
+	 			<td><p class= "percent" id = "P2"></p></td>
+	 			<td><button class = "button" onclick = "deleteRow(this)">DELETE</button></td>
+	 		</tr>
+	 		<tr>
+	 			<td>Activity 4</td>
+	 			<td>A4</td>
+	 			<td>
+	 				<form>
+	 					<input type="text" name="weight" class = "weight">
+	 				</form>
+	 			</td>
+	 			<td>
+					<form>
+	 					<pre><input type="text" name="grades" class = "grades" id = "G6"> /</pre>
+	 				</form>
+	 				
+	 				<form>
+	 					<input type="text" name="grades" class = "grades" id = "G7">
+	 				</form>
+	 			</td>
+	 			<td><p class= "percent" id ="P3"></p></td>
+	 			<td><button class = "button" onclick = "deleteRow(this)">DELETE</button></td>
+	 		</tr>			
+	 	</table>
+
+	 	<b class = "redbold" id= "redbold2">Result <span id = "result"></span></b>
+
+	 	<button class = "button" id = "weighted">WEIGHTED</button>
+	 	<button class = "button" id = "mean">MEAN</button> 
+	 </div>
+	</div>
+
+</div>
+
+
+</body>
+<script src = "calculator.js"></script>
+</html>
